@@ -39,7 +39,6 @@ most of all, thanks for your time and good luck!
 ### c) What do these two answers tell us about how the two teams played?
 :::
 
-::: {#10b879a4 .cell .markdown}
 ## A1)
 
 # Importing pandas library as pd
@@ -102,10 +101,7 @@ part_c()
     1     724  0.103933
 
      Comparing expected goal value & score of the teams, team 596.0 performed better. Team 596.0 played well offensively compared to opponent team who showed a weaker offensive performance
-:::
 
-
-::: {#3ceee930 .cell .markdown}
 ## Q2)
 
 ### a) Which possessionid had the highest total successful passes?
@@ -113,7 +109,6 @@ part_c()
 ### b) How many successful passes were there and why do you think this specific possession had so many?
 :::
 
-::: {#6c191162 .cell .markdown}
 ## A2)
 
 ``` python
@@ -167,10 +162,7 @@ part_b()
 ## Q3)
 
 ### a) Using the event data provided along with x/y coordinate columns, can you identify the likely xCoord of each blueline?
-:::
 
-::: {#154e09ed .cell .code execution_count="3"}
-``` python
 # Importing pandas library as pd
 import pandas as pd
 
@@ -200,18 +192,13 @@ part_a()
 ::: {.output .stream .stdout}
     Likely xCoord of Offensive blue line :  57.32828397442983
     Likely xCoord of Defensive blue line :  -59.50543193527885
-:::
 
-
-::: {#15e4e1f4 .cell .markdown}
 ## Q4)
 
 ### a) Create a subset of all shot attempts in the game and then with the plotting library of your choice, produce one scatter plot per team to illustrate where their shots were located and highlight any goals that were scored. {#a-create-a-subset-of-all-shot-attempts-in-the-game-and-then-with-the-plotting-library-of-your-choice-produce-one-scatter-plot-per-team-to-illustrate-where-their-shots-were-located-and-highlight-any-goals-that-were-scored}
 
 ### b) Describe in 2-4 sentences your findings for each team. {#b-describe-in-2-4-sentences-your-findings-for-each-team}
-:::
 
-::: {#0ad99b06 .cell .markdown}
 ## A4)
 
 

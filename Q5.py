@@ -5,7 +5,6 @@ import pandas as pd
 df1 = pd.read_csv('Tutorial22_df.csv')
 df2 = pd.read_csv('Tutorial22_xG_df.csv')
 
-global Farthest_Goal_Data
 
 def parta():
     x = np.array(df1[['xcoord']])

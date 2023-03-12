@@ -28,14 +28,8 @@ Data Info:
 
 Please show all work, keep written answers succinct and to the point and
 most of all, thanks for your time and good luck!
-:::
 
-::: {#2d0b5ce9 .cell .code}
-``` python
-```
-:::
 
-::: {#76a61952 .cell .markdown}
 ## Q1)
 
 ### a) Who won the game & what was the score? {#a-who-won-the-game--what-was-the-score}
@@ -47,10 +41,7 @@ most of all, thanks for your time and good luck!
 
 ::: {#10b879a4 .cell .markdown}
 ## A1)
-:::
 
-::: {#cd930532 .cell .code execution_count="13" scrolled="true"}
-``` python
 # Importing pandas library as pd
 import pandas as pd
 
@@ -112,7 +103,7 @@ part_c()
 
      Comparing expected goal value & score of the teams, team 596.0 performed better. Team 596.0 played well offensively compared to opponent team who showed a weaker offensive performance
 :::
-:::
+
 
 ::: {#3ceee930 .cell .markdown}
 ## Q2)
@@ -125,8 +116,6 @@ part_c()
 ::: {#6c191162 .cell .markdown}
 ## A2)
 
-
-::: {#c08bdc85 .cell .code execution_count="2" scrolled="true"}
 ``` python
 # Importing pandas library as pd
 import pandas as pd
@@ -174,10 +163,7 @@ part_b()
 
     Total Number of successful passes were 552. 
     There could be many arguments for this, but I believe it will keep the opponent team busy in maintaining thedefensive mode until your team keeps the possession of puck
-:::
-:::
 
-::: {#bd50c34d .cell .markdown}
 ## Q3)
 
 ### a) Using the event data provided along with x/y coordinate columns, can you identify the likely xCoord of each blueline?
@@ -215,7 +201,7 @@ part_a()
     Likely xCoord of Offensive blue line :  57.32828397442983
     Likely xCoord of Defensive blue line :  -59.50543193527885
 :::
-:::
+
 
 ::: {#15e4e1f4 .cell .markdown}
 ## Q4)
@@ -294,10 +280,7 @@ comments()
 ::: {.output .stream .stdout}
     Team 596 has made 4 goals as indicated by red dots. The graph design implies that except one outlier goal shot, all the shots were present on the positive x coordinates
     Team 724 has made just 1 goal as indicated by red dot. The graph design implies that their shots were evently distributed over the field.
-:::
-:::
 
-::: {#c42be5fc .cell .markdown}
 ## Q5)
 
 ### a) If the centre of the net that teams shoot at is located at xCoord=89, yCoord=0, create a column for the distance from each shot to this point. What is the distance of the furthest goal scored in the game? {#a-if-the-centre-of-the-net-that-teams-shoot-at-is-located-at-xcoord89-ycoord0-create-a-column-for-the-distance-from-each-shot-to-this-point-what-is-the-distance-of-the-furthest-goal-scored-in-the-game}
@@ -364,10 +347,7 @@ part_b(Farthest_Goal_Data)
 ::: {.output .stream .stdout}
     Distance of the furthest goal scored in the game is 188.38995295426992
     No corresponding xg value found!
-:::
-:::
 
-::: {#7fd43684 .cell .markdown}
 ## Q6)
 
 ### a) If a \"Shot Assist\" is defined as a sequence of events with the same possessionid where there is: 1) a successful pass followed by 2) a successful reception by a teammate and then without giving up the puck 3) the receiving player has a shot attempt, create a column flagging shots that have a Shot Assist. Which player(s) had the most assisted shots in the game and how many assisted shots did they have? {#a-if-a-shot-assist-is-defined-as-a-sequence-of-events-with-the-same-possessionid-where-there-is-1-a-successful-pass-followed-by-2-a-successful-reception-by-a-teammate-and-then-without-giving-up-the-puck-3-the-receiving-player-has-a-shot-attempt-create-a-column-flagging-shots-that-have-a-shot-assist-which-players-had-the-most-assisted-shots-in-the-game-and-how-many-assisted-shots-did-they-have}
@@ -476,9 +456,7 @@ ShotAssist()
     The below list of players ids have the most number of assisted shots with the number being 1
     [332856, 332856, 628757, 838211, 538217, 538217, 628757, 838211, 288890, 288890, 538217, 677394, 677394, 288890, 84875, 673651, 628757, 628757, 628757, 628757, 673651, 764371, 84875, 628757, 628757, 797810, 952287, 952287, 952287, 952287, 952287, 485421, 797810, 628757, 628757, 838211, 838211, 628757, 838211, 677394, 677394, 677394, 838211, 838211, 838211, 677394, 677394, 698619, 838211, 677394, 698619, 698619, 677394, 677394, 677394, 698619, 698619, 698619, 628757, 261698, 628757, 261698, 628757, 698619, 890686, 890686, 890686, 673651, 847481, 485421, 485421, 485421, 847481, 393337, 828703, 812630, 812630, 812630, 393337, 828703, 424862, 424862, 600730, 628757, 628757, 261698, 952287, 952287, 952287, 511560, 797810, 797810, 952287, 511560, 332856, 890686, 890686, 538217, 538217, 154967, 332856, 332856, 628757, 154967, 154967, 84875, 698619, 831664, 183489, 698619, 698619, 698619, 698619, 764371, 84875, 698619, 831664, 183489, 485421, 485421, 485421, 915333, 45223, 915333, 485421, 45223, 485421, 915333, 485421, 45223, 485421, 828703, 828703, 828703, 828703, 485421, 812630, 828703, 828703, 485421, 485421, 915333, 485421, 485421, 812630, 485421, 915333, 511560, 815413, 511560, 511560, 797810, 511560, 815413, 797810, 797810, 511560, 45223, 45223, 812630, 915333, 45223, 812630, 915333, 45223, 812630, 815413, 797810, 797810, 952287, 815413, 303683, 154967, 538217, 538217, 628757, 303683, 154967, 154967, 154967, 628757, 915333, 290779, 290779, 45223, 424862, 424862, 183489, 183489, 628757, 673651, 673651, 677394, 698619, 698619, 154967, 154967, 698619, 628757, 628757, 628757, 261698, 403721, 45223, 290779, 290779, 403721, 403721, 403721, 84875, 831664, 698619, 831664, 698619, 698619, 698619, 831664, 831664, 831664, 628757, 698619, 628757, 698619, 332856, 628757, 628757, 332856, 628757, 698619, 628757, 698619, 332856, 332856, 183489, 183489, 890686, 890686, 511560, 424862, 424862, 511560, 600730, 600730, 511560, 511560, 812630, 403721, 92751, 92751, 812630, 812630, 812630, 952287, 952287, 403721, 485421, 485421, 797810, 915333, 915333, 45223, 890686, 261698, 261698, 698619, 183489, 183489, 332856, 332856, 183489, 698619, 183489, 673651, 154967, 673651, 831664, 831664, 673651, 764371, 764371, 511560, 290779, 915333, 511560, 290779, 915333, 511560, 915333, 915333, 698619, 628757, 628757, 628757, 628757, 154967, 890686, 303683, 154967, 890686, 303683, 154967, 838211, 838211, 92751, 92751, 952287, 303683, 538217, 538217, 890686, 890686, 303683, 303683, 890686, 698619, 261698, 890686, 698619, 698619, 628757, 764371, 332856, 628757, 764371, 332856, 628757, 628757, 628757, 764371, 698619, 698619, 828703, 812630, 812630, 812630, 84875, 84875, 677394, 677394, 677394, 600730, 403721, 403721, 424862, 511560, 511560, 600730, 600730, 45223, 828703, 828703, 812630, 393337, 403721, 92751, 92751, 92751, 812630, 393337, 403721, 45223, 45223, 815413, 815413, 154967, 890686, 890686, 154967, 154967, 154967, 154967, 261698, 261698, 952287, 511560, 952287, 511560, 45223, 45223, 45223, 847481, 847481, 288890, 896591, 154967, 896591, 896591, 154967, 952287, 797810, 797810, 183489, 698619, 698619, 183489, 628757, 628757, 303683, 303683, 183489, 332856, 628757, 303683, 332856, 628757, 303683, 698619, 698619, 261698, 288890, 288890, 538217, 538217]
 :::
-:::
 
-::: {#c6779d7f .cell .markdown}
 ## Q7)
 
 ### a) What is highest xg among the goals that were scored and why do you think it was this high?
@@ -543,12 +521,7 @@ comments()
 ### b) Please explain your reasoning for choosing this technique and explain your findings
 
 ### Hint: look back at the columns you were asked to create, along with the columns already provided in the event dataset, what would lead to dangerous shot attempts?
-:::
 
-::: {#16fba9ea .cell .markdown}
-:::
-
-::: {#41ff1fbd .cell .code execution_count="11"}
 ``` python
 # Importing libraries
 import numpy as np

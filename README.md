@@ -124,7 +124,7 @@ import pandas as pd
 df1 = pd.read_csv('Tutorial22_df.csv')
 df2 = pd.read_csv('Tutorial22_xG_df.csv')
 
-
+## A2)
 def part_a():
     """ Which possessionid had the highest total successful passes? """
 
@@ -177,7 +177,7 @@ import pandas as pd
 # Reading data from csv files
 df1 = pd.read_csv('Tutorial22_df.csv')
 
-
+## A3)
 def part_a():
     """ Using the event data provided along with x/y coordinate columns, can you identify the likely xCoord of each
     blueline?"""
@@ -288,10 +288,7 @@ comments()
 ### b) What is the expected goals (xg) value of this furthest goal and what do you think contributed to this xg value?
 :::
 
-::: {#230ee416 .cell .markdown}
-:::
-
-::: {#7b9c6e2d .cell .code execution_count="6"}
+## A5)
 ``` python
 # Importing pandas  & numpy library
 import pandas as pd
@@ -355,10 +352,7 @@ part_b(Farthest_Goal_Data)
 ### Hint: This can be done using iterrows() or using shift() logic. Consider if you should include ALL event rows and beware of sorting! {#hint-this-can-be-done-using-iterrows-or-using-shift-logic-consider-if-you-should-include-all-event-rows-and-beware-of-sorting}
 :::
 
-::: {#c60cf07b .cell .markdown}
-
-::: {#652b0c8f .cell .code execution_count="7"}
-``` python
+## A6)
 # Importing pandas library as pd
 import pandas as pd
 
@@ -463,11 +457,7 @@ ShotAssist()
 
 ### b) Did this goal have a shot assist?
 :::
-
-::: {#b13b8f8b .cell .markdown}
-
-::: {#00833bad .cell .code execution_count="9"}
-``` python
+## A7)
 # Importing pandas library as pd
 import pandas as pd
 
@@ -511,9 +501,7 @@ comments()
 
     Comments: This goal doesn't have a Shot Assist primary becuase it is the only record for its possession id = 555, and doesn't have successful pass & successful reception as required
 :::
-:::
 
-::: {#78a1e7c5 .cell .markdown}
 ## Q8)
 
 ### a) Consider other shots with high xg values, without engineering any additional features (aside from the columns you\'ve already been asked to create in the questions above), use a statistical technique of your choice to show the highest predictors of a goal within this dataset. {#a-consider-other-shots-with-high-xg-values-without-engineering-any-additional-features-aside-from-the-columns-youve-already-been-asked-to-create-in-the-questions-above-use-a-statistical-technique-of-your-choice-to-show-the-highest-predictors-of-a-goal-within-this-dataset}
@@ -522,7 +510,7 @@ comments()
 
 ### Hint: look back at the columns you were asked to create, along with the columns already provided in the event dataset, what would lead to dangerous shot attempts?
 
-``` python
+## A8)
 # Importing libraries
 import numpy as np
 import pandas as pd

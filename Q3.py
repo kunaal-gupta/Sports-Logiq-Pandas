@@ -1,25 +1,24 @@
+# Importing pandas library as pd
 import pandas as pd
-"""" filter the data by possession zone. The offensive blue line will have a possession zone of "oz" and the 
-defensive blue line will have a possession zone of "dz". Here's the updated code:
+
+# Reading data from csv files
+df1 = pd.read_csv('Tutorial22_df.csv')
 
 
-code filters the data by possession zone and groups the data by possession ID. Then, it calculates the mean xCoord 
-for each possession in each zone and prints the results. The offensive blue line xCoord is the mean xCoord for 
-possessions in the offensive zone, and the defensive blue line xCoord is the mean xCoord for possessions in the 
-defensive zone.
+def part_a():
+    """ Using the event data provided along with x/y coordinate columns, can you identify the likely xCoord of each
+    blueline?"""
 
-"""
-# load the data
-df = pd.read_csv("Tutorial22_df.csv")
+    # Filtering the dataset by specific zones & grouping them by possession ID
+    dZone = df1[df1["zone"] == "dz"].groupby("possessionid")
+    oZone = df1[df1["zone"] == "oz"].groupby("possessionid")
 
-# filter by possession zone and group by possession ID
-offensive_zone = df[df["zone"] == "oz"].groupby("possessionid")
-defensive_zone = df[df["zone"] == "dz"].groupby("possessionid")
+    # Calculating the mean of x-coordinates of each zones
+    oZone_xCoord = oZone["xcoord"].mean()
+    dZone_xCoord = dZone["xcoord"].mean()
 
-# calculate the mean xCoord for each possession in each zone
-offensive_xCoord = offensive_zone["xcoord"].mean()
-defensive_xCoord = defensive_zone["xcoord"].mean()
+    print("Likely xCoord of Offensive blue line : ", oZone_xCoord.mean())
+    print("Likely xCoord of Defensive blue line : ", dZone_xCoord.mean())
 
-# print the results
-print("Offensive blue line xCoord: ", offensive_xCoord.mean())
-print("Defensive blue line xCoord: ", defensive_xCoord.mean())
+
+part_a()
